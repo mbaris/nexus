@@ -19,12 +19,12 @@ To practice tdd and refactor without any deadlines
 
 Add a twitter4j.properties file under src/main/resources with the following format
 
-'''
+```
 oauth.consumerKey=*******************
 oauth.consumerSecret=*******************
 oauth.accessToken=*******************
 oauth.accessTokenSecret=*******************
-'''
+```
 
 Run elasticsearch on localhost:9200
 
