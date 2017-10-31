@@ -1,7 +1,7 @@
-package io.baris.esports.service;
+package io.baris.nexus.service;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import io.baris.esports.dto.TwitterStatus;
+import io.baris.nexus.dto.TwitterStatus;
 
 public interface TwitterStatusService {
 

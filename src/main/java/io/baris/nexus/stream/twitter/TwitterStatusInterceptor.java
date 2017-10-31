@@ -1,8 +1,8 @@
-package io.baris.esports.stream.twitter;
+package io.baris.nexus.stream.twitter;
 
-import io.baris.esports.dto.TwitterStatus;
-import io.baris.esports.dto.mapper.TwitterStatusMapper;
-import io.baris.esports.queue.service.QueueService;
+import io.baris.nexus.dto.TwitterStatus;
+import io.baris.nexus.dto.mapper.TwitterStatusMapper;
+import io.baris.nexus.queue.service.QueueService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import twitter4j.Status;

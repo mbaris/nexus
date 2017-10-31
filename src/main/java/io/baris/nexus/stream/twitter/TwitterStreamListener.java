@@ -1,4 +1,4 @@
-package io.baris.esports.stream.twitter;
+package io.baris.nexus.stream.twitter;
 
 
 import org.springframework.beans.factory.annotation.Autowired;

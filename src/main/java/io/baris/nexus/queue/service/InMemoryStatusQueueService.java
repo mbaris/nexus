@@ -1,6 +1,6 @@
-package io.baris.esports.queue.service;
+package io.baris.nexus.queue.service;
 
-import io.baris.esports.dto.TwitterStatus;
+import io.baris.nexus.dto.TwitterStatus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;

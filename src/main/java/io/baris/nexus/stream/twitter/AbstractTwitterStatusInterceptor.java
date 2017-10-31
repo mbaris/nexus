@@ -1,4 +1,4 @@
-package io.baris.esports.stream.twitter;
+package io.baris.nexus.stream.twitter;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

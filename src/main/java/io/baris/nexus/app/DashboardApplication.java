@@ -1,4 +1,4 @@
-package io.baris.esports.app;
+package io.baris.nexus.app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

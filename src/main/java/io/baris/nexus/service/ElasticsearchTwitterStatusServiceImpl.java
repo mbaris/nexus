@@ -1,8 +1,8 @@
-package io.baris.esports.service;
+package io.baris.nexus.service;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import io.baris.esports.dto.TwitterStatus;
-import io.baris.esports.repository.elasticsearch.TwitterStatusRepository;
+import io.baris.nexus.dto.TwitterStatus;
+import io.baris.nexus.elasticsearch.TwitterStatusRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

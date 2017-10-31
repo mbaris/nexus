@@ -1,7 +1,7 @@
-package io.baris.esports.repository.elasticsearch;
+package io.baris.nexus.elasticsearch;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import io.baris.esports.dto.TwitterStatus;
+import io.baris.nexus.dto.TwitterStatus;
 import org.elasticsearch.action.index.IndexResponse;
 
 public interface TwitterStatusRepository {

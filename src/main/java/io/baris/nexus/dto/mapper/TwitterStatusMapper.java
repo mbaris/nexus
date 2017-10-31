@@ -1,6 +1,6 @@
-package io.baris.esports.dto.mapper;
+package io.baris.nexus.dto.mapper;
 
-import io.baris.esports.dto.TwitterStatus;
+import io.baris.nexus.dto.TwitterStatus;
 import org.springframework.stereotype.Service;
 import twitter4j.Status;
 

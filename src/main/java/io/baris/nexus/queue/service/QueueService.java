@@ -1,4 +1,4 @@
-package io.baris.esports.queue.service;
+package io.baris.nexus.queue.service;
 
 import java.util.Optional;
 

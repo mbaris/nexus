@@ -1,4 +1,4 @@
-package io.baris.esports.dto;
+package io.baris.nexus.dto;
 
 import java.util.Objects;
 

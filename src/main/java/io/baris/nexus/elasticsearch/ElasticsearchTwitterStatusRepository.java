@@ -1,8 +1,8 @@
-package io.baris.esports.repository.elasticsearch;
+package io.baris.nexus.elasticsearch;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import io.baris.esports.dto.TwitterStatus;
+import io.baris.nexus.dto.TwitterStatus;
 import org.elasticsearch.action.index.IndexResponse;
 import org.elasticsearch.client.transport.TransportClient;
 import org.elasticsearch.common.settings.Settings;
@@ -30,7 +30,7 @@ public class ElasticsearchTwitterStatusRepository implements TwitterStatusReposi
 
     @Override
     public IndexResponse save(TwitterStatus twitterStatus) throws JsonProcessingException {
-        return client.prepareIndex("esports", "status").setSource(objectMapper.writeValueAsString(twitterStatus), XContentType.JSON).execute().actionGet();
+        return client.prepareIndex("nexus", "status").setSource(objectMapper.writeValueAsString(twitterStatus), XContentType.JSON).execute().actionGet();
     }
 
     @Override

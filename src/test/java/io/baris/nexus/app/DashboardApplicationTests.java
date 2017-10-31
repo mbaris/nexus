@@ -1,4 +1,4 @@
-package io.baris.esports.app;
+package io.baris.nexus.app;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
