@@ -1,10 +1,14 @@
 package io.baris.esports.stream.twitter;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import twitter4j.StallWarning;
 import twitter4j.StatusDeletionNotice;
 import twitter4j.StatusListener;
 
 public abstract class AbstractTwitterStatusInterceptor implements StatusListener {
+
+    Logger logger = LoggerFactory.getLogger(getClass());
 
     @Override
     public void onDeletionNotice(StatusDeletionNotice statusDeletionNotice) {

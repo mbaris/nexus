@@ -9,16 +9,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class TwitterStatusServiceImpl implements TwitterStatusService {
+public class ElasticsearchTwitterStatusServiceImpl implements TwitterStatusService {
 
-    Logger logger = LoggerFactory.getLogger(TwitterStatusServiceImpl.class);
+    private Logger logger = LoggerFactory.getLogger(ElasticsearchTwitterStatusServiceImpl.class);
 
     @Autowired
     private TwitterStatusRepository esRepository;
 
     @Override
     public void save(TwitterStatus twitterStatus) throws JsonProcessingException {
-        logger.info("Indexing: "+ twitterStatus);
+        logger.debug("Indexing: "+ twitterStatus);
         esRepository.save(twitterStatus);
     }
 
