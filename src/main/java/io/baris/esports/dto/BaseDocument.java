@@ -1,6 +1,5 @@
 package io.baris.esports.dto;
 
-import java.util.Date;
 import java.util.Objects;
 
 public abstract class BaseDocument {

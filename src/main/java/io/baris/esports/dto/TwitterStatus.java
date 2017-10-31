@@ -1,7 +1,6 @@
 package io.baris.esports.dto;
 
 import java.util.Objects;
-
 public class TwitterStatus extends BaseDocument {
 
     private String text;

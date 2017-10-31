@@ -2,7 +2,7 @@ package io.baris.esports.stream.twitter;
 
 import io.baris.esports.dto.TwitterStatus;
 import io.baris.esports.dto.mapper.TwitterStatusMapper;
-import io.baris.esports.repository.elasticsearch.ElasticsearchTwitterStatusRepository;
+import io.baris.esports.service.TwitterStatusService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import twitter4j.Status;
@@ -11,7 +11,7 @@ import twitter4j.Status;
 public class TwitterStatusInterceptor extends AbstractTwitterStatusInterceptor {
 
     @Autowired
-    private ElasticsearchTwitterStatusRepository elasticsearchTwitterStatusRepository;
+    private TwitterStatusService twitterStatusService;
 
     @Autowired
     private TwitterStatusMapper twitterStatusMapper;
@@ -19,6 +19,6 @@ public class TwitterStatusInterceptor extends AbstractTwitterStatusInterceptor {
     @Override
     public void onStatus(Status status) {
         TwitterStatus twitterStatus = twitterStatusMapper.generateDocument(status);
-        elasticsearchTwitterStatusRepository.saveDocument(twitterStatus);
+        twitterStatusService.save(twitterStatus);
     }
 }
